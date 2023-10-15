@@ -1,67 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="assets/style.css">
 <head>
     <style>
-        .tab{
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: rgb(255, 255, 255);
-            color: #000000;
-            text-decoration: none;
-            margin: 10px;
-            border-radius: 5px;
-            font-family: sans-serif;
-            font-size: 16px;
-        }
-        .heading{
-            font-family: sans-serif;
-            color: aliceblue;
-            font-size: 60px;
-        }
-        .heading2{
-            font-family: sans-serif;
-            color: aliceblue;
-            font-size: 35px;
-        }
-        .profile-image {
-            border-radius: 50%; 
-            width: 400px; 
-            height: 550px; 
-            float: right;
-            margin: 20px ;
-           /* display: block;*/
-        }
-
-        .introduction1{
-            font-family: sans-serif;
-            color: white;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .introduction2{
-            font-family: sans-serif;
-            color: white;
-            font-size: 16px;
-            font-weight: none;
-        }
-
-        body{
-            background-image: url('blackBackground.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-        
-        p1{
-            color: bisque;
-        }
-        table {
-            font-family: sans-serif;
-            color: #dddddd;
-            border-collapse: collapse;
-            width: 100%;
-        }
+    
+    .heading2{
+        font-family: sans-serif;
+    }
+    .heading3{
+        color: aliceblue;
+        font-size: 35px;
+    }
         td, th{
             border: 1px solid #dddddd;
             text-align: left;
@@ -75,62 +24,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
-<body>
-    <div>
-        <a href="assets/Resume.html" class="tab">Resume</a>
-        <a href="assets/contact.html" class="tab">Contact</a>
-        <a href="assets/experience.html" class="tab">Experience</a>
-        <a href="assets/project.html" class="tab">Project</a>
-    </div>
-    <h1 class="heading">
+<body class="banner">
+    
+    <div class="tab">
+        <ul>
+       <li><a href="assets/Resume.html">Resume</a></li>
+       <li><a href="assets/contact.html">Contact</a></li>
+       <li><a href="assets/experience.html">Experience</a></li>
+       <li><a href="assets/project.html">Project</a></li>
+        </ul>
+    </div><br><br><br><br>
+
+    <div class="professional">
+    <h1 class="heading" id="main-heading">
         Rebin Roy
     </h1>
     <img src="profileImage.JPG" alt="Portfolio Image" class="profile-image" usemap="#catmap">
     <map name="catmap">
         <area shape="rect" coords="150,150,360,460" alt="cat" href="assets/cat.html">
 
-    </map>
+    </map><br><br><br>
     <blockquote class="introduction1">
 
         Game Programming First semester student of St. Lawrence College.<br>
         Have basic knowledge in C++, HTML and JavaScript.<br>
         Passionate about gaming and game development career.<br>
 
-    </blockquote>
+    </blockquote><br><br><br>
     <p class="introduction2">
        <q> Born and raised in southern part of India and was always passionate about gameing.<br>
         had achived some goals in compatative gaming and after got intrested in game development.<br>
-        Moved to Canada for further studies and currently entrolled in Game Programming in St. Lawrence college.</q><br><br><br>
+        Moved to Canada for further studies and currently entrolled in Game Programming in St. Lawrence college.</q><br><br><br><br><br>
     
         <hr>
-
+        <br>
+        <br>
     </p>
-    <p><a href="#additional_information">GO TO BOTTOM</a></p>
-
-    <h2 class="heading2">
+</div>
+<br>
+<br>
+    <p><a class="button" href="#additional_information">GO TO BOTTOM</a></p>
+    <br>
+    <br>
+    
+    <div class="personal">
+        <h2 style="font-family: sans-serif; color: aliceblue; font-size: 35px;">
         Hobbies and Interests
-    </h2>
+    </h2><br><br><br>
     <pre class="introduction2">
         My hobbies are playing video games and watching movies. My all time favourate game 
-        is GTA San Andreas. I always love to play it. I also play a lot of games like: </pre>
+        is GTA San Andreas. I always love to play it. I also play a lot of games like: </pre><br>
     <ul class="introduction2">
         <li>GTA 5</li>
         <li>NFS Payback </li>
         <li>Gran Turisma</li>
         <li>Amoung Us </li>
         <li>PUBG</li>
-    </ul>
+    </ul><br><br>
     <pre class="introduction2">
         Also I like to watch action or thriller movies. And I watch a lot of Marvel movies.
-        My all time favourate movies are: </pre>
+        My all time favourate movies are: </pre><br>
         <ol class="introduction2">
             <li>Avengers: Endgame</li>
             <li>Avatar</li>
             <li>Interstellar</li>
             <li>SpiderMan: Across the spider verse</li>
         </ol>
+    </div>
         <br><br><br><br>
-<h3 class="heading2">
+<h3 class="heading2 heading3">
     Education
 </h3>
 <table>
@@ -154,9 +116,27 @@
     </tr>
 </table>
 <br><br><br><br><br><br>
+<p class="heading4">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am also interested in Photography. Here are some pictures i took..
+</p><br><br><br>
+<table>
+    <tr>
+        <td><img src="assets/IMG_0252.jpg" class="workImage"></td>
+        <td><img src="assets/IMG_0377.jpg" class="workImage"></td>
+    </tr>
+    <tr>
+        <td><img src="assets/IMG_0325.jpg" class="workImage"></td>
+        <td><img src="assets/IMG_0355.jpg" class="workImage"></td>
+    </tr>
+    <tr>
+        <td><img src="assets/IMG_0370.jpg" class="workImage"></td>
+        <td><img src="assets/IMG_0401.jpg" class="workImage"></td>
+    </tr>
+</table>
+<br><br><br><br>
 <p class="introduction2" id="additional_information">
-   For additional information<a href="https://www.instagram.com/machine_black_/?next=%2F">CLICK HERE</a>
-</p> 
+   For additional information<a class="button" href="https://www.instagram.com/machine_black_/?next=%2F">CLICK HERE</a>
+</p> <br><br><br><br>
 
 </body>
 </html>
